@@ -20,3 +20,5 @@ async def main():
     )
     print(len(results))
     #> 20
+
+asyncio.run(main())
