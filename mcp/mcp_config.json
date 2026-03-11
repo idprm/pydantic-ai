@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "python-runner": {
+        "command": "uv",
+        "args": ["run", "mcp-run-python", "stdio"]
+    },
+    "weather": {
+      "command": "python",
+      "args": ["mcp_server.py"]
+    },
+    "weather-api": {
+      "url": "http://localhost:3001/sse"
+    },
+    "calculator": {
+      "url": "http://localhost:8000/mcp"
+    }
+  }
+}

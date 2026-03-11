@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "python-runner": {
+      "command": "${PYTHON_CMD:-python3}",
+      "args": ["run", "${MCP_MODULE}", "stdio"],
+      "env": {
+        "API_KEY": "${MY_API_KEY}"
+      }
+    },
+    "weather-api": {
+      "url": "https://${SERVER_HOST:-localhost}:${SERVER_PORT:-8080}/sse"
+    }
+  }
+}
