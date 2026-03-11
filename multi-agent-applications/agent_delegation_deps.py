@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 
 import httpx
+import asyncio
 
 from pydantic_ai import Agent, RunContext
 
@@ -59,3 +60,5 @@ async def main():
         #> Did you hear about the toothpaste scandal? They called it Colgate.
         print(result.usage())  
         #> RunUsage(input_tokens=221, output_tokens=32, requests=4, tool_calls=2)
+
+asyncio.run(main())
